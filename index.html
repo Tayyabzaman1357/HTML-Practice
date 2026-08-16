@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-   <meta name="description" content="Tayyab Zaman is a frontend developer skilled in React, JavaScript and modern web development.">
+    <meta
+      name="description"
+      content="Tayyab Zaman is a frontend developer skilled in React, JavaScript and modern web development."
+   >
   </head>
   <body>
     <!-- <form>
@@ -142,51 +145,103 @@
 
 <p>Hello&nbsp;&nbsp;&nbsp;Tayyab</p> -->
 
-
-
-
-<!-- <figure>
+    <!-- <figure>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPf_062JKWOBQr9rKxfyjLtlwzCn6Wwx_fJ6vQDIAgQ&s=10" alt="">
    <figcaption>Strawberry image</figcaption>
 </figure> -->
-<!-- 
+    <!-- 
 <address>
   name:tayyab,
   city: Karachi,
 <time datetime="">10:00</time>
 </address> -->
 
+    <!-- <audio controls src="song.mp3"></audio> -->
 
-<!-- <audio controls src="song.mp3"></audio> -->
-
-<!-- <video controls width="500">
+    <!-- <video controls width="500">
   <source src="video.mp4" >
   <track src="subtitles.vtt" kind="subtitles" srclang="en" default>
 
 </video> -->
 
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ktoYUycRXTA?si=vz2oQQENhXm7hMzK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"></iframe> -->
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ktoYUycRXTA?si=vz2oQQENhXm7hMzK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"></iframe> -->
+    <!-- <iframe src="https://www.youtube.com/embed/ktoYUycRXTA&t=459s" frameborder="0"></iframe> -->
 
-<!-- <iframe src="https://www.youtube.com/embed/ktoYUycRXTA&t=459s" frameborder="0"></iframe> -->
+    <!-- <iframe src="https://www.youtube.com/watch/embed/ktoYUycRXTA&t=459s" frameborder="0"></iframe> -->
 
-
-
-
-<!-- <iframe src="https://www.youtube.com/watch/embed/ktoYUycRXTA&t=459s" frameborder="0"></iframe> -->
-
-
-<!-- <link rel="stylesheet" href=""> -->
-<!-- <p>Tayyab &nbsp; &nbsp; &nbsp; Zamna</p>
+    <!-- <link rel="stylesheet" href=""> -->
+    <!-- <p>Tayyab &nbsp; &nbsp; &nbsp; Zamna</p>
 <p>&copy; 2026</p>
 <p> 5 &lt; 10 </p>
 <p>10 &gt; 20</p>
 <p>Tayyab&amp; Zaman </p> -->
+    <!-- 
+<button title="Click to Submit">Submit</button>
+<p hidden>My name is Tayyab Zamna</p> -->
 
+    <!-- <div draggable="false">
+    Mujhe drag karo
+  </div> -->
+    <!-- <h1 contenteditable="true">
+  Tayyab Zaman
+</h1>
+<button tabindex="1">First</button>
+<button tabindex="2">Second</button>
+<div tabindex="0">
+  Focus me
+</div>
+<div tabindex="-1">
+  Hello
+</div> -->
 
+    <!-- <input placeholder="Name" tabindex="2">
+<input placeholder="Email" tabindex="1">
+<button tabindex="3">Submit</button>
+<div tabindex="-1">
+  Hello
+</div> -->
 
+     <button onclick="getlocation()">My Location</button>
 
+  <p id="result">Location yahan show hogi</p>
 
+  <script>
 
+    function getlocation() {
+
+      if (navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(
+
+          function (position) {
+
+            document.getElementById("result").innerHTML =
+              "Latitude: " +
+              position.coords.latitude +
+              "<br>Longitude: " +
+              position.coords.longitude;
+
+          },
+
+          function (error) {
+
+            document.getElementById("result").innerHTML =
+              "Error: " + error.message;
+
+          }
+
+        );
+
+      } else {
+
+        document.getElementById("result").innerHTML =
+          "Geolocation supported nahi hai.";
+
+      }
+
+    }
+
+  </script>
   </body>
 </html>
